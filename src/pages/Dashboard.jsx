@@ -203,10 +203,10 @@ function Dashboard() {
               {allUsers.map((user, i) => (
                 <tr className='border-b border-[#474747]' key={user._id}>
                   <td className='p-3 text-sm'>{i + 1}</td>
-                  <td className='p-3 text-sm'>{user.fullName}</td>
-                  <td className='p-3 text-sm'>{user.username}</td>
-                  <td className='p-3 text-sm'>{user.email}</td>
-                  <td className={`p-3 text-sm ${user.role === "user" ? "text-green-400" : "text-orange-400"}`}>{user.role}</td>
+                  <td className='p-3 text-sm'>{user?.fullName}</td>
+                  <td className='p-3 text-sm'>{user?.username}</td>
+                  <td className='p-3 text-sm'>{user?.email}</td>
+                  <td className={`p-3 text-sm ${user?.role === "user" ? "text-green-400" : "text-orange-400"}`}>{user.role}</td>
                   <td className='p-3 text-sm'><button className='bg-red-500 p-2 rounded-md hover:bg-red-400'><RiDeleteBinLine /></button></td>
                   <td className='p-3 text-sm'><button className='bg-[#685CFE] p-2 rounded-md'><FiEdit /></button></td>
                 </tr>
