@@ -19,6 +19,7 @@ import hackerRank from '../assets/hackerRank.png'
 import java from '../assets/java.png'
 import whatsapp from '../assets/whatsapp.png'
 import gmail from '../assets/gmail.png'
+import weather from '../assets/weather.png'
 
 
 // React components 
@@ -83,6 +84,10 @@ function Portfolio() {
 
 
           <ProjectCard iconImg={bhailang} title={"Bhailang"} websiteLink={"https://github.com/Naitik2408/Bhailang"} websiteLinkTitle={"url-shortner-seven-swart.vercel"} githubLink={"https://github.com/Naitik2408/Bhailang"} githubLinkTitle={"Naitik2408/Url-Shortner-api"} commit={"updated readme file"} date={"8h ago on"} />
+
+          <ProjectCard iconImg={weather} title={"Weather App"} websiteLink={"https://weather-app-dun-sigma-65.vercel.app/"} websiteLinkTitle={"weather-app.vercel.app"} githubLink={"https://github.com/Naitik2408/WeatherApp"} githubLinkTitle={"Naitik2408/Weather-app"} commit={"some changes 2"} date={"6h ago on"} />
+
+        
 
         </div>
       </div>
