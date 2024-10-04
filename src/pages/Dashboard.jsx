@@ -158,9 +158,9 @@ function Dashboard() {
                 <tr className='border-b border-[#474747]' key={post._id}>
                   <td className='p-3 px-3 text-sm max-w-32'>{i + 1}</td>
                   <td className='p-3 px-3 text-sm max-w-32 line-clamp-1 leading-[40px]'>{post.title}</td>
-                  <td className='p-3 px-3 text-sm max-w-32'><div className='w-10 h-10 overflow-hidden rounded-full'><img src={post.coverImage} alt="" className='w-full  h-full object-cover' /></div></td>
+                  <td className='p-3 px-3 text-sm max-w-32'><div className='w-10 h-10 overflow-hidden rounded-full'><img src={post?.coverImage} alt="" className='w-full  h-full object-cover' /></div></td>
                   {/* <td className='pt-3 text-sm max-w-32 '>{post.content}</td> */}
-                  <td className='p-3 px-3 text-sm max-w-32'>{post.authorId.username}</td>
+                  <td className='p-3 px-3 text-sm max-w-32'>{post?.authorId?.username}</td>
 
                   <td className='p-3 px-3 text-sm max-w-32'>
                     {deletingPostId === post._id ? (
